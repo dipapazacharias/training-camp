@@ -9,5 +9,5 @@ http.createServer((req, res) => {
   });
   res.end("Hello, world!\n");
 }).listen(port, host, () => {
-  console.log("Server listening at http://${hostname}:${port}");
+  console.log(`Server listening at http://${host}:${port}/`);
 });
