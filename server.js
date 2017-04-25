@@ -1,13 +1,22 @@
-const http = require('http');
+"use strict";
 
-const host = "127.0.0.1";
-const port = 8000;
+const http = require("http");
+const url = require("url");
+const path = require("path");
+const fs = require("fs");
+const mimeTypes = {
+  "html": "text/html",
+  "js": "text/javascript",
+  "css": "text/css",
+  "jpeg": "image/jpeg",
+  "jpg": "image/jpg"
+};
 
-http.createServer((req, res) => {
-  res.writeHead(200, {
-    "Content-Type": "text/plain"
-  });
-  res.end("Hello, world!\n");
-}).listen(port, host, () => {
-  console.log(`Server listening at http://${host}:${port}/`);
-});
+const server = http.createServer((req, res) => {
+  let uri = url.parse(req.url).pathname;
+  let fileName = path.join(process.cwd(), decodeURI(uri));
+  console.log(`Loading ${uri}` + "\n");
+  console.log(`Filename: ${filename}`);
+  let stats;
+}).listen(8000);
+
