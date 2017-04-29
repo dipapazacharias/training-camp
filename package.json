@@ -7,10 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "body-parser": "*",
-    "express": "*",
-    "pug": "*",
-    "nodemailer": "*"
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "pug": "^2.0.0-alpha6",
+    "nodemailer": "^4.0.1"
   },
   "repository": {
     "type": "git",
