@@ -1,0 +1,25 @@
+{
+  "name": "2.basic-express-website",
+  "version": "1.0.0",
+  "description": "basic express tutorial",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "body-parser": "*",
+    "express": "*",
+    "pug": "*",
+    "nodemailer": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/dipapazacharias/2.basic-express-website.git"
+  },
+  "author": "dipapazacharias",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dipapazacharias/2.basic-express-website/issues"
+  },
+  "homepage": "https://github.com/dipapazacharias/2.basic-express-website#readme"
+}
