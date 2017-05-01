@@ -5,11 +5,15 @@ const nodemailer = require("nodemailer");
 
 const app = express();
 
+app.set("views", path.join(__dirname, "/views"));
+app.set("view engine", "pug");
+
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 
 app.get("/", function(req, res){
-  res.send("<h1>Hello, world!</h1>");
+  res.render("index");
   console.log("Request handled ok");
 });
 
