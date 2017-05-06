@@ -1,4 +1,16 @@
 extends layout
 
 block content
-  h1 Contact us
+  .container
+    h1 Contact us
+    form(name="mailer-form", method="post", action="/contact/send")
+      .form-group
+        label Name
+        input.form-control(type="text", name="name", placeholder="Enter Name")
+      .form-group
+        label Email
+        input.form-control(type="email", name="email", placeholder="Enter Email")  
+      .form-group
+        label Message
+        textarea.form-control(rows="6", name="message", placeholder="Enter Message")
+      button.btn.btn-info(type="submit") Submit   
