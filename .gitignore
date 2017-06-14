@@ -1,0 +1,9 @@
+# Ignore README. Changes to tis file sould only be done on remote repository.
+README.md
+
+# Ignore node_modules directory
+node_modules/
+
+# Ignore npm .log files
+npm-debug.log
+
