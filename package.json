@@ -12,14 +12,6 @@
     "pug": "^2.0.0-alpha6",
     "nodemailer": "^4.0.1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/dipapazacharias/2.basic-express-website.git"
-  },
   "author": "dipapazacharias",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/dipapazacharias/2.basic-express-website/issues"
-  },
-  "homepage": "https://github.com/dipapazacharias/2.basic-express-website#readme"
+  "license": "ISC"
 }
