@@ -40,7 +40,7 @@ const server = http.createServer((req, res) => {
   if (stats.isFile()) {
     var mimeType = mimeTypes[path.extname(uri).split(".")[1]];
     console.log("Requested file MIME-type: " + mimeType);
-    res.writeHead(200, {"Content/type": mimeType});
+    res.writeHead(200, {"Content-type": mimeType});
     var fileStream = fs.createReadStream(fileName);
     fileStream.pipe(res);
   } else if (stats.isDirectory()) {
