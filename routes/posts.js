@@ -31,8 +31,8 @@ router.post('/add', upload.single('mainimage'), function(req, res, next) {
 	}
 
 	// Form Validation
-	req.checkBody('title', 'Title filed is required').notEmpty();
-	req.checkBody('body', 'Body filed is required').notEmpty();
+	req.checkBody('title', 'Title field is required').notEmpty();
+	req.checkBody('body', 'Body field is required').notEmpty();
 
 	// Check errors
 	var errors = req.validationErrors();

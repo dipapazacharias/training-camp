@@ -26,4 +26,9 @@ block content
 			select.form-control(name='author')
 				option(value='Brad Traversy') Brad Traversy
 				option(value='John Doe') John Doe
+				option(value='Mimis Mimaras') Mimis Mimaras
+
 		input.btn.btn-default(name='submit',type='submit',value='Save')
+		script(src='/ckeditor/ckeditor.js')
+		script
+			| CKEDITOR.replace('body');
